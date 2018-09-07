@@ -1,4 +1,3 @@
 #!/bin/sh
 
-cp /tmp/openocd/share/openocd/contrib/ /etc/udev/rules.d/
-
+cp /usr/local/share/openocd/contrib/60-openocd.rules /etc/udev/rules.d/
