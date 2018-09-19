@@ -14,11 +14,14 @@ addons:
 env:
     - CC=gcc-arm-linux-gnueabihf
 
+before_install:
+    - export CC=gcc-arm-linux-gnueabihf
+
 install:
-  - gem install --no-ri --no-rdoc fpm
+    - gem install --no-ri --no-rdoc fpm
 
 script:
-  - ./make_deb.sh
+    - ./make_deb.sh
 
 # deploy:
 #   provider: releases
