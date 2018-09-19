@@ -12,7 +12,7 @@ addons:
       - gcc-arm-linux-gnueabihf
 
 env:
-    - COMPILER=gcc-arm-linux-gnueabihf
+    - CC=gcc-arm-linux-gnueabihf
 
 install:
   - gem install --no-ri --no-rdoc fpm
