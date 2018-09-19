@@ -17,7 +17,7 @@ fpm --input-type dir \
 	--license "MIT" \
 	--url "https://github.com/TurtleRover/openocd" \
 	--version ${VERSION:1} \
-	--iteration 1 \
+	--iteration 2 \
 	--architecture armhf \
 	--deb-no-default-config-files \
 	--deb-dist stretch \
