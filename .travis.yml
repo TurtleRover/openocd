@@ -1,4 +1,5 @@
 sudo: required
+language: cpp
 
 addons:
   apt:
@@ -9,6 +10,8 @@ addons:
       - pkg-config
       - autoconf
       - texinfo
+      - libusb-1.0-0-dev
+      - arm-linux-gnueabihf-gcc
 
 
 install:
