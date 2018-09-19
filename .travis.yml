@@ -11,7 +11,7 @@ addons:
       - autoconf
       - texinfo
       - libusb-1.0-0-dev
-      - arm-linux-gnueabihf-gcc
+      - gcc-arm-linux-gnueabihf
 
 
 install:
