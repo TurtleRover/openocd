@@ -15,7 +15,7 @@ install:
   - gem install --no-ri --no-rdoc fpm
 
 script:
-  - sh ./make_deb.sh
+  - ./make_deb.sh
 
 # deploy:
 #   provider: releases
