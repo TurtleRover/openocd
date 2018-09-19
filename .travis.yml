@@ -12,10 +12,8 @@ addons:
       - gcc-arm-linux-gnueabihf
 
 env:
-    - CC=gcc-arm-linux-gnueabihf
+    - TRAVIS_COMPILER=gcc-arm-linux-gnueabihf
 
-before_install:
-    - export CC=gcc-arm-linux-gnueabihf
 
 install:
     - gem install --no-ri --no-rdoc fpm
