@@ -1,4 +1,4 @@
-language: cpp
+language: c
 
 addons:
   apt:
@@ -10,12 +10,9 @@ addons:
       - autoconf
       - texinfo
       - gcc-arm-linux-gnueabihf
-      - g++-arm-linux-gnueabihf
-      - qemu-system-arm
-      - qemu-user-static
 
-env: QEMU_INTERPRETER=qemu-arm-static CC_COMPILER=arm-linux-gnueabihf-gcc CXX_COMPILER=arm-linux-gnueabihf-g++
-
+env:
+    - COMPILER=gcc-arm-linux-gnueabihf
 
 install:
   - gem install --no-ri --no-rdoc fpm
