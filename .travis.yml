@@ -11,9 +11,8 @@ addons:
       - texinfo
       - gcc-arm-linux-gnueabihf
 
-env:
-    - TRAVIS_COMPILER=gcc-arm-linux-gnueabihf
-
+before_install:
+    - export TRAVIS_COMPILER=gcc-arm-linux-gnueabihf
 
 install:
     - gem install --no-ri --no-rdoc fpm
