@@ -22,7 +22,7 @@ fpm --input-type dir \
 	--deb-no-default-config-files \
 	--deb-dist stretch \
 	--verbose \
-	--description "OpenOCD Debugger for Turtle Rover" \
+	--description "OpenOCD Debugger for Turtle Rover with custom configs" \
 	--after-install ./after-install.sh \
 	--after-remove ./after-remove.sh \
 	--prefix /usr/local \
