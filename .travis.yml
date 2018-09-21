@@ -32,4 +32,4 @@ deploy:
   name: $TRAVIS_TAG
   on:
     branch: master
-tags: true
+    tags: true
