@@ -14,15 +14,19 @@ addons:
 before_install:
     - sudo apt-get install -y gcc-arm-linux-gnueabihf
     - sudo apt-get install bc
-    - export TRAVIS_COMPILER=arm-linux-gnueabihf-
-    - export CC=arm-linux-gnueabihf-
+
+   
 
 
 install:
     - gem install --no-ri --no-rdoc fpm
 
 script:
+    - export ARCH=arm
+    - export CROSS_COMPILE=arm-linux-gnueabihf-
     - ./make_deb.sh
+    
+
 
 # deploy:
 #   provider: releases
