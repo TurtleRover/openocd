@@ -16,9 +16,9 @@ before_install:
     - sudo apt-get install -y gcc-arm-linux-gnueabihf
     - arm-linux-gnueabihf-gcc --version
     - sudo apt-get -y install bc
-    - sudo apt install build-essential
-    - sudo apt install g++-arm-linux-gnueabihf
-    - sudo apt install gdb-multiarc
+    - sudo apt-get install build-essential
+    - sudo apt-get install g++-arm-linux-gnueabihf
+    - sudo apt-get install gdb-multiarc
     - if [ `uname -m` = x86_64 ]; then sudo apt-get install libc6-i386 lib32stdc++6 lib32z1; fi
 
    
