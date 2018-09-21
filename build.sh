@@ -8,6 +8,6 @@ cd openocd
 
 make
 
-make install
+make install LIBNBIS=no
 
 cd ..
