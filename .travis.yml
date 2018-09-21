@@ -14,8 +14,8 @@ addons:
 before_install:
     - sudo apt-get install -y gcc-arm-linux-gnueabihf
     - sudo apt-get install bc
-    - export TRAVIS_COMPILER=gcc-arm-linux-gnueabihf-
-    - export CC=gcc-arm-linux-gnueabihf-
+    - export TRAVIS_COMPILER=arm-linux-gnueabihf-
+    - export CC=arm-linux-gnueabihf-
 
 
 install:
