@@ -28,9 +28,9 @@ install:
 
 script:
     - export ARCH=arm
-    - export CROSS_COMPILE=arm-linux-gnueabihf-
-    - export TRAVIS_COMPILER=arm-linux-gnueabihf-
-    - export CC=arm-linux-gnueabihf-
+    - export CROSS_COMPILE=arm-arm-linux-gnueabihf-gcc-4.8
+    - export TRAVIS_COMPILER=arm-linux-gnueabihf-gcc-4.8
+    - export CC=arm-linux-gnueabihf-gcc-4.8
     - echo "CONFIG_MODULES=y" >> arch/arm/configs/multi_v7_defconfig
     - echo "CONFIG_MODULE_UNLOAD=y" >> arch/arm/configs/multi_v7_defconfig
     - ./make_deb.sh
