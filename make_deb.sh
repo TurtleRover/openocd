@@ -8,6 +8,10 @@ echo "Starting OpenOCD for TurtleRover packaging"
 echo "---------------$VERSION----------------"
 cd ..
 
+# Copy custom configs to temporary dir
+mkdir -p /tmp/openocd/config/
+cp -R ./config/ /tmp/openocd/
+
 fpm --input-type dir \
 	--output-type deb \
 	--chdir "/tmp/openocd/" \
@@ -17,7 +21,7 @@ fpm --input-type dir \
 	--license "MIT" \
 	--url "https://github.com/TurtleRover/openocd" \
 	--version ${VERSION:1} \
-	--iteration 4 \
+	--iteration 5 \
 	--architecture armhf \
 	--deb-no-default-config-files \
 	--deb-dist stretch \
@@ -25,5 +29,6 @@ fpm --input-type dir \
 	--description "OpenOCD Debugger for Turtle Rover with custom configs" \
 	--after-install ./after-install.sh \
 	--after-remove ./after-remove.sh \
-	--prefix /usr/local \
+    --prefix /usr/local \
+    config/=../../opt/turtlerover/openocd/config/ \
 	.
