@@ -23,4 +23,7 @@
   <a href="https://www.youtube.com/channel/UCxukvEct3wP0S5FACa3uelA" alt="YouTube">YouTube</a>
 </p>
 
-This deb package contains also Turtle Shield related configuration files (`/etc/turtlerover/openocd/`).
+This deb package contains Turtle Shield related configuration files (`/etc/turtlerover/openocd/`).
+This deb package will add `turtle-shield-flash` alias for `sudo openocd -f /opt/turtlerover/openocd/config/shield.cfg`.
+
+To flash [firmware](https://github.com/TurtleRover/firmware-shield), place `turtle.elf` in home direcory and run `turtle-shield-flash`.
